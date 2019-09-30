@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="formsandfonts.css">
+    <link href="https://fonts.googleapis.com/css?family=Tangerine">
+    <style>
+
+        .flex-container {
+            display: flex;
+            background-color: #ffffff;
+            width: 100%;
+        }
+
+        .div1 {
+            width: 50%;
+            height: 100vh;
+            border: 1px solid #ffffff;
+            box-sizing: border-box;
+        }
+
+        .div2 {
+            width: 50%;
+            height: 100vh;
+            border: 1px solid #ffffff;
+            box-sizing: border-box;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<form action="voorbeeldform.php" method="post">
+    <div class="flex-container">
+
+        <!--KOLOM 1-->
+        <div class="div1">
+            <ul>
+                <li>
+                    <h2>Burton Education</h2>
+                    <span class="verplicht">* verplicht veld</span>
+                </li>
+                <li>
+                    <label for="voornaam">Voornaam:</label>
+                    <input type="text" name="voornaam" id="voornaam"/>
+                </li>
+                <li>
+                    <label for="tussenvoegsel">Tussenvoegsel:</label>
+                    <input type="text" name="tussenvoegsel" id="tussenvoegsel"/>
+                </li>
+                <li>
+                    <label for="achternaam">Achternaam:</label>
+                    <input type="text" name="acthernaam" id="achternaam"/>
+                </li>
+                <li>
+                    <span id="a">Geslacht:</span>
+                    <input id="d" type="radio" name="geslacht" value="vrouw"/>
+                    <span id="e">&nbsp;vrouw</span>
+                    <input id="b" type="radio" name="geslacht" value="man"/>
+                    <span id="c">&nbsp;man</span>
+
+                </li>
+                <li>
+                    <label>Kleur ogen:</label>
+                    <select name="kleur ogen">
+                        <option>groen</option>
+                        <option>blauw</option>
+                        <option>bruin</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="omschrijving">Omschrijving:</label>
+                    <textarea rows="8" cols="40" id="omschrijving" name="omschrijving"></textarea>
+                </li>
+                <li>
+                    <input type="submit" name="knop"/>
+                </li>
+            </ul>
+        </div>
+        <!--EINDE KOLOM 1-->
+
+        <!--KOLOM 2-->
+        <div class="div2">
+            <label>Lekker eten:</label>
+            <br>
+            <input type="checkbox" name="lekker-eten" value="sperciebonen">
+            <span class="checkbox">Sperciebonen</span><br>
+            <input type="checkbox" name="lekker-eten" value="aardappelen">
+            <span class="checkbox">Aardappelen</span><br>
+            <input type="checkbox" name="lekker-eten" value="hamburger">
+            <span class="checkbox">Hamburger</span><br>
+        </div>
+        <!--EINDE KOLOM 2-->
+
+    </div>
+</form>
+
+
+</div>
+</body>
+</html>
